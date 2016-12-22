@@ -1,24 +1,41 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+//import {Component, View, bootstrap} from 'angular2/angular2';
+//import {Component, View, bootstrap} from 'angular2/core';
+////import {reflect} from 'reflect-metadata';
+////import {es6} from 'es6-shim';
+////import "reflect-metadata";
+//
+//@Component({
+//    selector: 'my-app',
+//    templateUrl: "template/app.html",
+//    //template:'<div>fuck world!</div>'
+//})
+//class MyAppComponent {
+//    constructor() {
+//    }
+//}
+//bootstrap(MyAppComponent);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-//import {Component, View, bootstrap} from 'angular2/angular2';
 var core_1 = require('angular2/core');
-var MyAppComponent = (function () {
-    function MyAppComponent() {
+var AppComponent = (function () {
+    function AppComponent() {
+        this.name = 'fucking hight';
     }
-    MyAppComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: "template/app.html"
+            template: "<h1>{{name}}</h1>"
         })
-    ], MyAppComponent);
-    return MyAppComponent;
+    ], AppComponent);
+    return AppComponent;
 })();
-core_1.bootstrap(MyAppComponent);
+exports.AppComponent = AppComponent;
+core_1.bootstrap(AppComponent);
 console.log("app-start");
 //# sourceMappingURL=app.js.map
 },{"angular2/core":2}],2:[function(require,module,exports){
