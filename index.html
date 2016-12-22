@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>demo</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple Angular 2 example">
+    <script src="vendor/system.js"></script>
+    <script>System.config({ baseURL: '/', defaultJSExtensions: true});</script>
+
+    <!--<script src='dist/lib.js'></script>-->
+    <script src='vendor/jquery-2.1.4.min.js'></script>
+    <script src="vendor/angular2.dev.js"></script>
+    <script src="vendor/router.dev.js"></script>
+
+    <script src='vendor/firebase.js'></script>
+    <script src='vendor/chartist.js'></script>
+    <script src='vendor/moment.js'></script>
+    <script src='vendor/materialize.js'></script>
+</head>
+<body class="grey lighten-4">
+<my-app></my-app>
+<script>
+    System.config(
+            {
+                packages: {'app': {defaultExtension: 'js'}}
+            });
+    System.import('app/app');
+</script>
+</body>
+</html>
